@@ -91,6 +91,10 @@ import java.util.Set;
   private String animationName;
   private @RawRes int animationResId;
 
+  public LottieDrawable getLottieDrawable(){
+    return lottieDrawable;
+  }
+
   /**
    * When we set a new composition, we set LottieDrawable to null then back again so that ImageView re-checks its bounds.
    * However, this causes the drawable to get unscheduled briefly. Normally, we would pause the animation but in this case, we don't want to.
